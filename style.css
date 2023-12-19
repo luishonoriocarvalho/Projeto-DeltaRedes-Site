@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.global_container{
+    display: flex;
+    flex-direction: column;    
+    min-height: 100vh;
+}
+
+.header_content{
+    background-color: #e3f2fd;
+    height: 3.5rem;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.header_content-img{
+    width: 7rem;
+}
+
+#main_content{
+    flex: 1 0 30rem;
+}
+
+.main_content-menu{
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.main_content-link{
+    color: #2f5999;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+}
+
+.main_content-link:hover{
+    color: #428bca; 
+    text-decoration: underline;
+    
+}
+
+.main_content-banner{
+    background-image: url('img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main_content-banner-title{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;    
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.main_content-banner-text{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;    
+    font-size: 1.15rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.service-maintitle{
+    padding-top: 1rem;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.service-title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.card-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.card_container{
+    align-content: center;   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 0 40rem;    
+    justify-content: center;
+    
+}
+
+.card_container-style{
+    align-items: center;           
+    display: flex;
+    flex-direction: column;       
+    margin:0.5rem 0.5rem;     
+    padding: 0.5rem 1rem;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#main_content-about{
+    background-color: #8fb6c7;  
+    padding: 0.75rem;  
+}
+
+.aboutme-tittle{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;    
+    font-weight: 600;  
+}
+
+.aboutme-img{
+    display: none;
+}
+
+.aboutme-subtitle{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500; 
+}
+
+.aboutme-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: justify;
+}
+
+#main_content-contact{
+    padding: 0.75rem; 
+}
+
+.contact-tittle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.contact-subtitle{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    padding: 0 0.25rem;   
+    text-align: justify;
+}
+
+.contact-card{
+    background-color: #8fb6c7;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.75rem;   
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.contact-card:hover{
+    background-color: #6b92a1;
+    color: #f0f0f0;   
+}
+
+
+.contact-link{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #ffffff; 
+    text-decoration: none;      
+}
+
+.btn-img{
+    width: 1.5rem;
+}
+
+#footer_content{
+    background-color: #e3f2fd;
+    height: 3.5rem;  
+    display: flex;    
+    align-items: center;
+    justify-content: center;      
+}
+
+.footer_text{
+    font-size: 0.7rem;
+    margin-bottom: 0;
+    color: #2f5999;    
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.footer_img{
+    width: 7rem;   
+}
+
+@media (min-width: 790px) {
+    .main_content-banner-title{       
+        font-size: 2rem;
+    }
+
+    .main_content-banner-text{          
+        font-size: 1.25rem;
+    }
+
+    .service-maintitle{        
+        font-size: 1.75rem;
+    }
+    
+    .service-title{        
+        font-size: 1.5rem;
+    }
+    
+    .card-text{
+        font-size: 0.9rem;
+    }
+
+    .card_container{
+        flex-direction: row;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .card_container-style{
+        width: 32rem;
+        animation: slideIn 1s ease-out forwards;
+        
+    }
+
+    #main_content-about{
+        margin-top: 1rem;  
+    }
+
+    .aboutme_container{        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .aboutme-img{
+        display: block;
+        width: 20rem;
+        border-radius: 5rem;   
+        margin-top: 2rem;            
+    }
+
+    .aboutme_container-text{
+        width: 25rem;        
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .aboutme-tittle{
+        font-size: 2rem;    
+    }    
+    
+    
+    .aboutme-subtitle{
+        font-size: 1.25rem;
+        
+    }
+    
+    .aboutme-text{
+        font-size: 0.9rem;
+    }
+
+    .contact-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .contact-text{
+        width: 15rem;
+        font-size: 0.9rem;
+        
+    }
+
+    .contact-card{
+        margin-bottom: 1rem;
+        text-align: center;
+        height: 5rem;
+        width: 12rem;
+        border-radius: 0.75rem;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-tittle{
+        font-size: 2rem;
+    }
+    
+    .contact-subtitle{
+        font-size: 1.5rem;
+    }  
+
+   
+}
+
+@media (min-width: 1024px) {    
+
+    .header_content-img{
+        width: 9rem;
+    }
+
+    .main_content-link{
+        font-size: 1rem;
+    }
+
+    .aboutme-img{        
+        width: 25rem;          
+    }
+    
+
+    .contact-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .contact-card{
+        width: 20rem;
+    }
+
+    .contact-text{
+        width: 25rem;
+        font-size: 0.9rem;
+        
+    }
+
+
+}
+
+@media (min-width: 1580px) {    
+    .card_container-style{
+        width: 40rem;
+        
+    }
+    
+    
+}
+
+@media (min-width: 1965px) {
+    .card_container-style{
+        width: 27rem;
+        
+    }    
+    .aboutme_container-text{
+        width: 40rem;        
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .contact-card{
+        width: 20rem;
+    }
+}
+
+
